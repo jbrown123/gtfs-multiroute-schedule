@@ -5,12 +5,11 @@ View a consolidated schedule for multiple routes based on GTFS (General Transit 
 
 
 Reference docs
-	https://developers.google.com/transit/gtfs/reference
-	http://www.gtfs-data-exchange.com/agency/utah-transit-authority/
-	http://www.sqlite.org/lang.html
+- https://developers.google.com/transit/gtfs/reference
+- http://www.gtfs-data-exchange.com/agency/utah-transit-authority/
+- http://www.sqlite.org/lang.html
 
-
-Using SQLite for data storage ...
+Using SQLite for data storage
 
 Schema
 ------
