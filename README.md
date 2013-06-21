@@ -30,6 +30,7 @@ Schema
 
 Importing data
 --------------
+```sql
 	.separator ","
 	.import routes.txt routes
 	.import stop_times.txt stop_times
@@ -39,11 +40,14 @@ Importing data
 	-- make times usable by sqlite (doesn't like single digit hours)
 	update stop_times set departure_time = "0"||departure_time where length(departure_time) = 7;
 	update stop_times set arrival_time = "0"||arrival_time where length(arrival_time) = 7;
+```
 
+Retrieving data
+---------------
+```sql
 .headers on
 .mode column
 
-```sql
 --
 -- generic select with all the joins in place
 -- st = stop_times, s = stops, t = trips, r = routes, c = calendar
